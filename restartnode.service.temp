@@ -5,7 +5,7 @@ After=syslog.target network-online.target
 
 [Service]
 Type=simple
-ExecStart=python3 replacethis/restartnode.py
+ExecStart=/usr/bin/python3 replacethis/restartnode.py
 Restart=always
 RestartSec=10
 KillMode=process

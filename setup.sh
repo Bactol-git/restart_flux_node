@@ -18,8 +18,8 @@ if test -f "$FILE"; then
 fi
 
 echo 'Starting service'
-systemctl daemon-reload
-systemctl enable restartnode.service
-systemctl start restartnode.service
+systemctl --user daemon-reload
+systemctl --user enable restartnode.service
+systemctl --user start restartnode.service
 
 echo 'Done'
