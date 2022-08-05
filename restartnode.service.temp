@@ -1,7 +1,6 @@
+[Unit]
 Description=restart node after failed benchmark
-
-Wants=network.target
-After=syslog.target network-online.target
+After=multi-user.target
 
 [Service]
 Type=simple
@@ -11,4 +10,4 @@ RestartSec=10
 KillMode=process
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
