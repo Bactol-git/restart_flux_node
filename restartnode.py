@@ -14,4 +14,4 @@ if output['error'] != '':
         file_object.write(str(':'))
         file_object.write(output['error'])
         file_object.close()
-        os.system('sudo shutdown -r now')
+        os.system('shutdown -r now')
